@@ -31,11 +31,13 @@ main {
 }
 
 .main__image__image {
-  max-width: 100%;
+  object-fit: fill;
+  max-width: 280px;
 }
 
 .main__content {
   /* padding: 36px 32px; */
+  margin-bottom: 60px;
 }
 
 .main__content h1 {
@@ -96,13 +98,17 @@ main {
   grid-area: author__share;
   justify-self: end;
   background-color: #ecf2f8;
+}
+
+.author__share,
+.share__icon--share {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   text-align: center;
   line-height: 1.85;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .author__share:hover {
@@ -115,10 +121,73 @@ main {
 }
 
 .main__share {
-  display: none;
+  display: grid;
+  grid-column: 1fr 2fr 1fr;
+  grid-row: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "share__text share__icons share__icon--share";
   position: fixed;
-  bottom: 32px;
   height: 64px;
   width: 100%;
+  bottom: -150px;
+  bottom: -60px;
   background-color: #48556a;
+  transition: 0.5s ease;
+}
+
+.socials {
+  position: relative;
+}
+
+.author,
+.main__share {
+  position: absolute;
+  bottom: 20;
+}
+
+.main__share {
+  padding: 20px;
+}
+
+.share__text {
+  font-weight: 200;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  grid-area: share__text;
+  vertical-align: middle;
+  color: hsla(212, 23%, 69%, 1);
+  margin: 0px 10%;
+}
+
+.share__icon {
+  margin: 0 5px;
+}
+
+.share__icons {
+  grid-area: share__icons;
+}
+.share__icon--share {
+  grid-area: share__icon--share;
+  margin: -5px auto;
+  background-color: #6e8098;
+  fill: #ffffff;
+}
+
+@media only screen and (min-width: 750px) {
+  body {
+    background-color: red;
+  }
+  main {
+    flex-direction: row;
+    margin: 25%;
+    max-height: 35vh;
+  }
+
+  .main__content h1 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+  }
 }
