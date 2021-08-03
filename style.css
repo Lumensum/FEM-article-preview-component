@@ -27,7 +27,7 @@ main {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
-  margin: 10%;
+  margin: 6.5%;
 }
 
 .main__image__image {
@@ -52,10 +52,11 @@ main {
   line-height: 20px;
   letter-spacing: 0.121875px;
   color: #6e8098;
-  padding: 0px 32px;
+  padding: 0px 32px 20px;
 }
 
 .author {
+  padding: 0px 32px;
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -114,8 +115,8 @@ main {
 }
 
 .main__share {
-  display: block;
-  position: relative;
+  display: none;
+  position: fixed;
   bottom: 32px;
   height: 64px;
   width: 100%;
