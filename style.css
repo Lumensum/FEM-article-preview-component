@@ -23,11 +23,11 @@ main {
   align-items: center;
   flex-direction: column;
   background-color: #ffffff;
-  width: 327px;
-  height: 512px;
+  min-width: 327px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10%;
 }
 
 .main__image__image {
@@ -35,7 +35,7 @@ main {
 }
 
 .main__content {
-  padding: 36px 32px;
+  /* padding: 36px 32px; */
 }
 
 .main__content h1 {
@@ -44,7 +44,7 @@ main {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.2px;
-  margin-bottom: 12px;
+  padding: 32px 32px 16px;
 }
 .main__content P {
   font-weight: 200;
@@ -52,7 +52,7 @@ main {
   line-height: 20px;
   letter-spacing: 0.121875px;
   color: #6e8098;
-  margin-bottom: 20px;
+  padding: 0px 32px;
 }
 
 .author {
@@ -100,8 +100,24 @@ main {
   border-radius: 50%;
   text-align: center;
   line-height: 1.85;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.author__share:hover {
+  background-color: #6e8098;
+  fill: #ffffff;
+}
+
+.author__share__icon:hover {
+  fill: #ffffff;
 }
 
 .main__share {
-  display: none;
+  display: block;
+  position: relative;
+  bottom: 32px;
+  height: 64px;
+  width: 100%;
+  background-color: #48556a;
 }
