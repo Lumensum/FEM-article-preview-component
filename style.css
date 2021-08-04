@@ -247,6 +247,10 @@ footer {
     top: 100%;
     left: 50%;
   }
+
+  #shareButton2 {
+    visibility: hidden;
+  }
 }
 
 /* Large desktops and laptops */
