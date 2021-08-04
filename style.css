@@ -189,7 +189,6 @@ footer {
 
 .author__share {
   grid-area: author__share;
-
   background-color: #ecf2f8;
 }
 
@@ -200,6 +199,11 @@ footer {
 
 .author__share__icon:hover {
   fill: #ffffff;
+}
+
+.share__icon--share {
+  background-color: #6e8098;
+  fill: white;
 }
 
 /* ---------- MEDIA QUERIES ---------- */
