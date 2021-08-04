@@ -28,6 +28,11 @@ main {
   border-radius: 10px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
   margin: 6.5%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  height: auto;
+  max-width: 95vw;
 }
 
 .main__image__image {
