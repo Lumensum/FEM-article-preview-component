@@ -32,7 +32,7 @@ main {
 
 .main__image__image {
   object-fit: fill;
-  max-width: 280px;
+  /* max-width: 280px; */
 }
 
 .main__content {
@@ -176,7 +176,6 @@ main {
 }
 
 @media only screen and (min-width: 750px) {
-
   main {
     flex-direction: row;
     margin: 25%;
