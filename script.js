@@ -4,17 +4,17 @@ const shareBar = document.querySelector(".main__share");
 const authorBar = document.querySelector(".author");
 
 shareButton.addEventListener("click", () => {
-  if (shareBar.style.bottom == "-60px") {
-    shareBar.style.bottom = "-150px";
+  if (shareBar.style.bottom == "-125px") {
+    shareBar.style.bottom = "-250px";
   } else {
-    shareBar.style.bottom = "-60px";
+    shareBar.style.bottom = "-125px";
   }
 });
 
 shareButton2.addEventListener("click", () => {
-  if (shareBar.style.bottom == "-60px") {
-    shareBar.style.bottom = "-150px";
+  if (shareBar.style.bottom == "-125px") {
+    shareBar.style.bottom = "-250px";
   } else {
-    shareBar.style.bottom = "-60px";
+    shareBar.style.bottom = "-125px";
   }
 });
