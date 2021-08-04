@@ -23,11 +23,11 @@ main {
   align-items: center;
   flex-direction: column;
   background-color: #ffffff;
-  overflow: hidden;
   border-radius: 10px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
   margin: auto 6.5%;
   max-width: 95vw;
+  overflow: hidden;
 }
 
 .main__image {
@@ -36,9 +36,9 @@ main {
   background-size: cover;
   background-position: center;
   min-height: 200px;
-  /* height: max-content; */
   width: 100%;
-  /* flex-grow: 1; */
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .main__content h1 {
@@ -72,9 +72,8 @@ footer {
   bottom: 0px;
   width: 100%;
   padding: 0 32px;
-  height: 64px;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
   gap: 0px 0px;
   justify-content: space-evenly;
   align-items: center;
@@ -85,6 +84,7 @@ footer {
   grid-template-areas:
     "author__image author__name author__share"
     "author__image author__date author__share";
+  margin-bottom: 16px;
 }
 
 .sharebar {
@@ -95,6 +95,10 @@ footer {
   user-select: none;
   bottom: 0;
   transition: 0.4s ease;
+  height: 64px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
 }
 
 .hideMe {
@@ -108,6 +112,7 @@ footer {
   cursor: default;
   margin: 0px auto;
   margin-left: 0;
+  margin-right: 12px;
 }
 
 .author__image {
@@ -124,7 +129,7 @@ footer {
   letter-spacing: 5px;
   text-transform: uppercase;
   grid-area: share__text;
-  color: hsla(212, 23%, 69%, 1);
+  color: #9eafc2;
 }
 
 /* ---------- FOOTER: MIDDLE PART ---------- */
@@ -210,6 +215,29 @@ footer {
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.25px;
+  }
+
+  .sharebar {
+    position: relative;
+    bottom: 75px;
+    right: -250px;
+    height: auto;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    z-index: 100;
+  }
+
+  .sharebar::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #48556a transparent transparent transparent;
+    top: 100%;
+    left: 50%;
   }
 }
 
