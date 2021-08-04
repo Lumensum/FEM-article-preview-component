@@ -60,7 +60,8 @@ main {
   line-height: 20px;
   letter-spacing: 0.121875px;
   padding: 0px 32px 20px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+  margin-bottom: 32px;
 }
 
 /* ---------- FOOTER ---------- */
@@ -71,7 +72,6 @@ footer {
 
 .authorbar,
 .sharebar {
-  position: absolute;
   bottom: 0px;
   width: 100%;
   padding: 0 32px;
@@ -83,24 +83,25 @@ footer {
 }
 
 .authorbar {
+  position: relative;
+  bottom: 16px;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "author__image author__name author__share"
     "author__image author__date author__share";
-  margin-bottom: 16px;
 }
 
 .sharebar {
+  position: absolute;
+  bottom: -16px;
   grid-template-rows: 1fr;
   grid-template-areas: "share__text share__icons share__icon--share";
   background-color: #48556a;
   opacity: 100%;
   user-select: none;
-  bottom: 0;
+  left: 0;
   transition: 0.4s ease;
   height: 64px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   width: 100%;
 }
 
@@ -192,18 +193,28 @@ footer {
   background-color: #ecf2f8;
 }
 
-.author__share:hover {
-  background-color: #6e8098;
-  fill: #ffffff;
+.author__share:hover img {
+  filter: brightness(400%);
 }
 
-.author__share__icon:hover {
-  fill: #ffffff;
+.author__share:hover {
+  background-color: #6e8098;
 }
 
 .share__icon--share {
   background-color: #6e8098;
-  fill: white;
+}
+
+.share__icon--share img {
+  filter: brightness(400%);
+}
+
+.share__icon--share:hover {
+  background-color: #ecf2f8;
+}
+
+.share__icon--share:hover img {
+  filter: brightness(100%);
 }
 
 /* ---------- MEDIA QUERIES ---------- */
@@ -226,14 +237,12 @@ footer {
   }
 
   .sharebar {
+    width: 200px;
     position: relative;
-    bottom: 75px;
-    right: -450px;
-    height: auto;
-    width: 250px;
+    bottom: 110px;
     border: none;
     border-radius: 10px;
-    z-index: 100;
+    left: -295%;
   }
 
   .sharebar::after {
@@ -251,24 +260,4 @@ footer {
   #shareButton2 {
     visibility: hidden;
   }
-}
-
-/* Large desktops and laptops */
-@media (min-width: 1200px) {
-}
-
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-}
-
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-}
-
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-}
-
-/* Portrait phones and smaller */
-@media (max-width: 480px) {
 }
