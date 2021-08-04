@@ -37,7 +37,7 @@ main {
   background-image: url("./images/drawers.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  min-height: 320px;
   width: 100%;
   flex-grow: 1;
 }
@@ -191,8 +191,8 @@ main {
 @media only screen and (min-width: 750px) {
   main {
     flex-direction: row;
-    margin: 25%;
-    max-height: 35vh;
+    margin: 24%;
+    max-height: 40vh;
   }
 
   .main__content h1 {
