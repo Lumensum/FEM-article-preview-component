@@ -18,10 +18,7 @@
   </head>
   <body>
     <main>
-      <div class="main__image">
-        &nbsp;
-        <!-- <img class="main__image__image" src="./images/drawers.jpg" alt="" /> -->
-      </div>
+      <div class="main__image">&nbsp;</div>
       <div class="main__content">
         <h1>
           Shift the overall look and feel by adding these wonderful touches to
@@ -33,16 +30,16 @@
           you make any room feel complete.
         </p>
 
-        <div class="socials">
-          <div class="author">
+        <footer>
+          <div class="authorbar">
             <img
               class="author__image"
               src="./images/avatar-michelle.jpg"
-              alt=""
+              alt="Photo of Michelle"
             />
             <div class="author__name">Michelle Appleton</div>
             <div class="author__date">28 Jun 2020</div>
-            <div class="author__share" id="shareButton">
+            <div class="author__share share__icon" id="shareButton">
               <img
                 class="author__share__icon"
                 src="./images/icon-share.svg"
@@ -50,24 +47,40 @@
               />
             </div>
           </div>
-          <div class="main__share" id="shareBar">
+          <div class="sharebar hideMe" id="shareBar">
             <span class="share__text">Share</span>
-            <div class="share__icons">
-              <span class="share__icon">
-                <img src="./images/icon-facebook.svg" alt="" />
+            <div class="sharebar__socialicons">
+              <span class="sharebar__socialicon">
+                <img
+                  src="./images/icon-facebook.svg"
+                  alt=""
+                  aria-label="Share this article on Facebook"
+                />
               </span>
-              <span class="share__icon">
-                <img src="./images/icon-twitter.svg" alt="" />
+              <span class="sharebar__socialicon">
+                <img
+                  src="./images/icon-twitter.svg"
+                  alt=""
+                  aria-label="Share this article on Twitter"
+                />
               </span>
-              <span class="share__icon">
-                <img src="./images/icon-pinterest.svg" alt="" />
+              <span class="sharebar__socialicon">
+                <img
+                  src="./images/icon-pinterest.svg"
+                  alt=""
+                  aria-label="Save this article on Pinterest"
+                />
               </span>
             </div>
-            <span class="share__icon share__icon--share" id="shareButton2">
+            <span
+              class="share__icon share__icon--share"
+              id="shareButton2"
+              aria-label="Close the sharing menu"
+            >
               <img src="./images/icon-share.svg" alt="" />
             </span>
           </div>
-        </div>
+        </footer>
       </div>
     </main>
 
