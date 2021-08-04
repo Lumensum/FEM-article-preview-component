@@ -27,7 +27,6 @@ main {
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
   margin: auto 6.5%;
   max-width: 95vw;
-  overflow: hidden;
 }
 
 .main__image {
@@ -38,6 +37,8 @@ main {
   min-height: 200px;
   width: 100%;
   flex: 1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .main__content {
@@ -103,6 +104,8 @@ footer {
   transition: 0.4s ease;
   height: 64px;
   width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .hideMe {
@@ -193,11 +196,13 @@ footer {
   background-color: #ecf2f8;
 }
 
-.author__share:hover img {
+.author__share:hover img,
+.author__share:focus img {
   filter: brightness(400%);
 }
 
-.author__share:hover {
+.author__share:hover,
+.author__share:focus {
   background-color: #6e8098;
 }
 
@@ -228,6 +233,8 @@ footer {
 
   .main__image {
     min-height: 320px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
   }
 
   .main__content h1 {
@@ -237,12 +244,18 @@ footer {
   }
 
   .sharebar {
-    width: 200px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "share__text share__icons";
+    min-width: 250px;
     position: relative;
     bottom: 110px;
     border: none;
     border-radius: 10px;
-    left: -295%;
+    left: -120px;
+    height: 55px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 13px 32px;
+    vertical-align: middle;
   }
 
   .sharebar::after {
