@@ -7,7 +7,7 @@ Hello, welcome and thank you for checking out this ReadMe.
 This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT).
 Frontend Mentor challenges help me improve my coding skills by building realistic projects.
 
-If you have any questions or if you can give me some advice to help me become a better developer, please feel free to send me a message. [My contact information is down below.](#author)
+If you have any questions or if you can give me some advice to help me become a better developer, please feel free to send me a message. [My contact information is down below.](#-author)
 
 ## 📑 Table of contents
 
