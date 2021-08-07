@@ -26,7 +26,8 @@ main {
   border-radius: 10px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
   margin: auto 6.5%;
-  max-width: 95vw;
+  /* max-width: 95vw; */
+  min-width: 270px;
 }
 
 .main__image {
@@ -73,13 +74,13 @@ footer {
 
 .authorbar,
 .sharebar {
-  bottom: 0px;
+  /* bottom: 0px; */
   width: 100%;
   padding: 0 32px;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   gap: 0px 0px;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
 }
 
@@ -93,25 +94,21 @@ footer {
 }
 
 .sharebar {
+  user-select: none;
   position: absolute;
   bottom: -16px;
-  grid-template-rows: 1fr;
-  grid-template-areas: "share__text share__icons share__icon--share";
   background-color: #48556a;
-  opacity: 100%;
-  user-select: none;
   left: 0;
   transition: 0.4s ease;
   height: 64px;
-  width: 100%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  opacity: 0;
-  transition: opacity 0.25s ease;
+  display: none;
+  cursor: default;
 }
 
-.fadeIn {
-  opacity: 1;
+.show {
+  display: flex;
 }
 
 /* ---------- FOOTER: LEFT PART ---------- */
@@ -161,15 +158,16 @@ footer {
 }
 
 .sharebar__socialicons {
-  width: 100%;
+  list-style: none;
+  display: flex;
 }
 
 .sharebar__socialicon {
   margin-left: 12px;
 }
 
-.share__icon {
-  justify-self: end;
+.share__icon,
+.sharebutton {
   width: 32px;
   height: 32px;
   border: none;
@@ -191,6 +189,11 @@ footer {
   grid-area: share__icons;
 }
 
+.sharebutton {
+  position: relative;
+  z-index: 10;
+}
+
 /* ---------- FOOTER: RIGHT PART ---------- */
 
 .author__share {
@@ -205,7 +208,8 @@ footer {
 
 .author__share:hover,
 .author__share:focus {
-  background-color: #6e8098;
+  background-color: #48556a;
+  border: none;
 }
 
 .share__icon--share {
@@ -222,6 +226,11 @@ footer {
 
 .share__icon--share:hover img {
   filter: brightness(100%);
+}
+
+.sharebutton:focus,
+.share__icon--share:focus {
+  border: 2px #48556a solid;
 }
 
 /* ---------- MEDIA QUERIES ---------- */
@@ -250,14 +259,13 @@ footer {
     grid-template-areas: "share__text share__icons";
     min-width: 250px;
     position: relative;
-    bottom: 110px;
     border: none;
     border-radius: 10px;
-    left: -120px;
     height: 55px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     padding: 13px 32px;
     vertical-align: middle;
+    transform: translate(-48%, -220%);
   }
 
   .sharebar::after {
@@ -270,9 +278,5 @@ footer {
     border-color: #48556a transparent transparent transparent;
     top: 100%;
     left: 50%;
-  }
-
-  #shareButton2 {
-    visibility: hidden;
   }
 }

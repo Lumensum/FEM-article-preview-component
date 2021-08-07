@@ -18,7 +18,7 @@
   </head>
   <body>
     <main>
-      <div class="main__image">&nbsp;</div>
+      <div class="main__image"></div>
       <div class="main__content">
         <h1>
           Shift the overall look and feel by adding these wonderful touches to
@@ -43,7 +43,7 @@
             <div class="author__share share__icon">
               <button
                 class="sharebutton"
-                id="shareButton"
+                id="sharebutton"
                 aria-label="Share this article"
               >
                 <img
@@ -53,10 +53,10 @@
                 />
               </button>
               <!-- // START SHAREBAR // -->
-              <div class="sharebar hideMe" id="shareBar">
+              <div class="sharebar" id="shareBar">
                 <span class="share__text">Share</span>
-                <div class="sharebar__socialicons">
-                  <span class="sharebar__socialicon">
+                <ul class="sharebar__socialicons">
+                  <li class="sharebar__socialicon">
                     <a
                       class="footer__icon"
                       href="/"
@@ -70,8 +70,8 @@
                         >Facebook (opens in new window)</span
                       >
                     </a>
-                  </span>
-                  <span class="sharebar__socialicon">
+                  </li>
+                  <li class="sharebar__socialicon">
                     <a
                       class="footer__icon"
                       href="/"
@@ -85,8 +85,8 @@
                         >Twitter (opens in new window)</span
                       >
                     </a>
-                  </span>
-                  <span class="sharebar__socialicon">
+                  </li>
+                  <li class="sharebar__socialicon">
                     <a
                       class="footer__icon"
                       href="/"
@@ -99,24 +99,16 @@
                         >Pinterest (opens in new window)</span
                       >
                     </a>
-                  </span>
-                </div>
-                <button class="sharebutton sharebutton--2" id="shareButton2">
-                  <img
-                    class="author__share__icon"
-                    src="./images/icon-share.svg"
-                    alt=""
-                  />
-                </button>
+                  </li>
+                </ul>
               </div>
               <!-- // END SHAREBAR // -->
             </div>
           </div>
-          <!-- Sharebar old position -->
         </footer>
       </div>
     </main>
 
-    <script src="./script.js"></script>
+    <script defer src="./script.js"></script>
   </body>
 </html>
