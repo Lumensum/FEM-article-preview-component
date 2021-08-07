@@ -40,53 +40,70 @@
             <div class="author__name">Michelle Appleton</div>
             <div class="author__date">28 Jun 2020</div>
 
-            <div class="author__share share__icon" id="shareButton">
-              <a href="#">
+            <div class="author__share share__icon">
+              <button class="sharebutton" id="shareButton">
                 <img
                   class="author__share__icon"
                   src="./images/icon-share.svg"
                   alt=""
                 />
-              </a>
+              </button>
               <!-- // START SHAREBAR // -->
               <div class="sharebar hideMe" id="shareBar">
                 <span class="share__text">Share</span>
                 <div class="sharebar__socialicons">
                   <span class="sharebar__socialicon">
-                    <a href="#">
-                      <img
-                        src="./images/icon-facebook.svg"
-                        alt=""
-                        aria-label="Share this article on Facebook"
-                      />
+                    <a
+                      class="footer__icon"
+                      href="/"
+                      target="_blank"
+                      rel="noopener"
+                      aria-labelledby="facebook-aria"
+                    >
+                      <img src="./images/icon-facebook.svg" alt="" />
+
+                      <span id="facebook-aria" hidden
+                        >Facebook (opens in new window)</span
+                      >
                     </a>
                   </span>
                   <span class="sharebar__socialicon">
-                    <a href="#">
-                      <img
-                        src="./images/icon-twitter.svg"
-                        alt=""
-                        aria-label="Share this article on Twitter"
-                      />
+                    <a
+                      class="footer__icon"
+                      href="/"
+                      target="_blank"
+                      rel="noopener"
+                      aria-labelledby="twitter-aria"
+                    >
+                      <img src="./images/icon-twitter.svg" alt="" />
+
+                      <span id="twitter-aria" hidden
+                        >Twitter (opens in new window)</span
+                      >
                     </a>
                   </span>
                   <span class="sharebar__socialicon">
-                    <a href="#">
-                      <img
-                        src="./images/icon-pinterest.svg"
-                        alt=""
-                        aria-label="Save this article on Pinterest"
-                      />
+                    <a
+                      class="footer__icon"
+                      href="/"
+                      target="_blank"
+                      rel="noopener"
+                      aria-labelledby="pinterest-aria"
+                    >
+                      <img src="./images/icon-pinterest.svg" alt="" />
+                      <span id="pinterest-aria" hidden
+                        >Pinterest (opens in new window)</span
+                      >
                     </a>
                   </span>
                 </div>
-                <span
-                  class="share__icon share__icon--share"
-                  id="shareButton2"
-                  aria-label="Close the sharing menu"
-                >
-                  <a href="#"><img src="./images/icon-share.svg" alt="" /></a>
-                </span>
+                <button class="sharebutton sharebutton--2" id="shareButton2">
+                  <img
+                    class="author__share__icon"
+                    src="./images/icon-share.svg"
+                    alt=""
+                  />
+                </button>
               </div>
               <!-- // END SHAREBAR // -->
             </div>
