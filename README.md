@@ -59,7 +59,7 @@ When making this page, I will make sure I keep responsiveness in mind. It is als
 
 I changed the colours of the design a little bit. I ran the page through an Color Contrast Accessibility Validator and the colours in the design did not have a high enough contrast, so I converted the colours to HSL and lowered the lightness untill they passed. Then I made the header even slightly more dark so it stands out from the paragraph text.
 
-I made the outline red and dashed to make it stand out from the rest of the page. I need to find more information about this. The default thin blue line did not stand out for me enough, but perhaps people who need to use the outline have tools to see it better. I have to research this more in the future.
+I made the outline the darkest design-colour and dashed to make it stand out from the rest of the page. I need to find more information about this. The default thin blue line did not stand out for me enough, but perhaps people who need to use the outline have tools to see it better. I have to research this more in the future.
 
 I tried to make sure all buttons and anchors have some sort or aria-label or hidden text.
 

@@ -217,7 +217,7 @@ main {
 
 .sharebutton:focus,
 .sharebar__icon:focus {
-  outline: 0.125rem /* 2px */ var(--clr-darkest) solid;
+  outline: 0.125rem /* 2px */ var(--clr-medium) solid;
   outline-style: dashed;
 }
 
