@@ -17,9 +17,7 @@ If you have any questions or if you can give me some advice to help me become a 
 - [Links](#links)
 - [My process](#-my-process)
 - [Built with](#built-with)
-- [What I learned](#what-i-learned)
-- [Continued development](#continued-development)
-- [Useful resources](#useful-resources)
+- [Reflection on Learning Goals](#reflection-on-learning-goals)
 - [Author](#-author)
 - [Acknowledgments](#-acknowledgments)
 
@@ -36,20 +34,18 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT/hub/article-preview-component-Piyx1l_eG](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT/hub/article-preview-component-Piyx1l_eG)
+- Live Site URL: [https://lumensum.github.io/FEM-article-preview-component/](https://lumensum.github.io/FEM-article-preview-component/)
 
 ## 🎓 My process
 
 ### Personal Learning Goals
 
-The goal for me with this project was learning about responsiveness and accessibility. In the previous projects I used a lot of fixed dimensions to make it look like toe design as much as possible. For this one I tried using none, but I still had to use it a couple of times. However, I tried to reduce that as much as possible.
-
-I also made the mobile-version first.
+When making this page, I will make sure I keep responsiveness in mind. It is also important to keep accessibility into account.
 
 ### Built with
 
@@ -59,45 +55,15 @@ I also made the mobile-version first.
 - CSS Grid
 - Mobile-first workflow
 
-### What I learned
+### Reflection on Learning Goals
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I changed the colours of the design a little bit. I ran the page through an Color Contrast Accessibility Validator and the colours in the design did not have a high enough contrast, so I converted the colours to HSL and lowered the lightness untill they passed. Then I made the header even slightly more dark so it stands out from the paragraph text.
 
-To see how you can add code snippets, see below:
+I made the outline red and dashed to make it stand out from the rest of the page. I need to find more information about this. The default thin blue line did not stand out for me enough, but perhaps people who need to use the outline have tools to see it better. I have to research this more in the future.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+I tried to make sure all buttons and anchors have some sort or aria-label or hidden text.
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+The final solution is very responsive and accessable in my opinion. I zoomed en dragged my browser windows around and the page kept looking fine.
 
 ## 📧 Author
 
