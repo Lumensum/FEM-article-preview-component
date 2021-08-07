@@ -6,5 +6,5 @@ shareButton.addEventListener("click", toggleSharebar);
 shareButton2.addEventListener("click", toggleSharebar);
 
 function toggleSharebar() {
-  shareBar.classList.toggle("hideMe");
+  shareBar.classList.toggle("fadeIn");
 }
