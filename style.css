@@ -9,6 +9,12 @@
   font-family: "Manrope", sans-serif;
 }
 
+:root {
+  --clr-darkest: hsl(217, 19%, 35%);
+  --clr-medium: hsl(211, 18%, 35%);
+  --clr-lightest: hsl(214, 23%, 35%);
+}
+
 body {
   background-color: #ecf2f8;
   display: flex;
@@ -46,8 +52,9 @@ main {
 }
 
 .main__content h1 {
-  color: #48556a;
+  color: var(--clr-darkest);
   font-size: 1rem; /* 16px */
+  font-size: 1.25rem; /* 20px */
   font-weight: 700;
   line-height: 1.5rem; /* 24px */
   letter-spacing: 0.0125rem; /* 0.2px */
@@ -55,8 +62,9 @@ main {
 }
 
 .main__content P {
-  color: #6e8098;
-  font-size: 0.8125rem; /* 13px */
+  color: var(--clr-medium);
+  /*font-size: 0.8125rem;*/ /* 13px */
+  font-size: 1rem; /* 16px */
   font-weight: 200;
   line-height: 1.25rem; /* 20px */
   letter-spacing: 0.0076rem; /* 0.121875px */
@@ -93,7 +101,7 @@ main {
   user-select: none;
   position: absolute;
   bottom: -1rem; /* -16px */
-  background-color: #48556a;
+  background-color: var(--clr-darkest);
   left: 0;
   transition: 0.4s ease;
   height: 4rem; /* 64px */
@@ -140,7 +148,7 @@ main {
   font-size: 0.8125rem; /* 13px */
   line-height: 1.25rem; /* 20px */
   letter-spacing: 0.0076rem; /* 0.121875px */
-  color: #48556a;
+  color: var(--clr-darkest);
   grid-area: author__name;
 }
 
@@ -149,7 +157,7 @@ main {
   font-size: 0.8125rem; /* 13px */
   line-height: 1.25rem; /* 20px */
   letter-spacing: 0.0076rem; /* 0.121875px */
-  color: #9daec2;
+  color: var(--clr-lightest);
   grid-area: author__date;
 }
 
