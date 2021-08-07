@@ -226,6 +226,7 @@ main {
 @media only screen and (min-width: 50rem /* 800px */) {
   main {
     flex-direction: row;
+    max-width: 46rem; /* 736px */
   }
 
   .main__image {
