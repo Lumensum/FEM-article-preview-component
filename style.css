@@ -166,8 +166,8 @@ main {
 
 .author__share,
 .sharebutton {
-  width: 2rem; /* 32px */
-  height: 2rem; /* 32px */
+  width: 2.5rem; /* 40px */
+  height: 2.5rem; /* 40px */
   border: none;
   border-radius: 50%;
   text-align: center;
