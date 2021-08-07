@@ -10,7 +10,7 @@
 }
 
 :root {
-  --clr-darkest: hsl(217, 19%, 35%);
+  --clr-darkest: hsl(217, 19%, 30%);
   --clr-medium: hsl(211, 18%, 35%);
   --clr-lightest: hsl(214, 23%, 35%);
 }
