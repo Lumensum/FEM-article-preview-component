@@ -26,7 +26,6 @@ main {
   border-radius: 10px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
   margin: auto 6.5%;
-  /* max-width: 95vw; */
   min-width: 270px;
 }
 
@@ -62,25 +61,22 @@ main {
   line-height: 20px;
   letter-spacing: 0.121875px;
   padding: 0px 32px 20px;
-  /* margin-bottom: 60px; */
   margin-bottom: 32px;
 }
 
 /* ---------- FOOTER ---------- */
 
-footer {
+.lower {
   position: relative;
 }
 
 .authorbar,
 .sharebar {
-  /* bottom: 0px; */
   width: 100%;
   padding: 0 32px;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   gap: 0px 0px;
-  /* justify-content: space-evenly; */
   align-items: center;
 }
 
@@ -160,27 +156,28 @@ footer {
 .sharebar__socialicons {
   list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sharebar__socialicon {
+.sharebar__icon {
   margin-left: 12px;
 }
 
-.share__icon,
+.author__share,
 .sharebutton {
   width: 32px;
   height: 32px;
   border: none;
   border-radius: 50%;
   text-align: center;
-  line-height: 1.85;
   cursor: pointer;
   transition: background-color 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: opacity 0.2s ease;
 }
 
-.sharebar__socialicon:hover,
-.sharebar__socialicon:focus {
+.sharebar__icon:hover,
+.sharebar__icon:focus {
   cursor: pointer;
   opacity: 50%;
 }
@@ -198,39 +195,22 @@ footer {
 
 .author__share {
   grid-area: author__share;
-  background-color: #ecf2f8;
 }
 
-.author__share:hover img,
-.author__share:focus img {
-  filter: brightness(400%);
-}
-
-.author__share:hover,
-.author__share:focus {
-  background-color: #48556a;
-  border: none;
-}
-
-.share__icon--share {
+.sharebutton:hover,
+.sharebutton:focus {
   background-color: #6e8098;
 }
 
-.share__icon--share img {
+.sharebutton:hover img,
+.sharebutton:focus img {
   filter: brightness(400%);
 }
 
-.share__icon--share:hover {
-  background-color: #ecf2f8;
-}
-
-.share__icon--share:hover img {
-  filter: brightness(100%);
-}
-
 .sharebutton:focus,
-.share__icon--share:focus {
-  border: 2px #48556a solid;
+.sharebar__icon:focus {
+  outline: 2px red solid;
+  outline-style: dashed;
 }
 
 /* ---------- MEDIA QUERIES ---------- */
@@ -238,8 +218,6 @@ footer {
 @media only screen and (min-width: 800px) {
   main {
     flex-direction: row;
-    /* margin: 24%; */
-    /* max-height: 40vh; */
   }
 
   .main__image {
